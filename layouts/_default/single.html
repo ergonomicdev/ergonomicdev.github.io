@@ -1,0 +1,12 @@
+{{ define "header" }}
+<header class="wrap intro">
+  <h1>{{ .Title }}</h1>
+  <div class="metadata subtle">
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ with .Params.tags }} · {{ range . }}<a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}{{ end }}
+  </div>
+</header>
+{{ end }}
+{{ define "main" }}
+  <article class="copy prose">{{ .Content }}</article>
+{{ end }}

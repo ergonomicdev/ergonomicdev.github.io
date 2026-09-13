@@ -1,0 +1,108 @@
+/* Original theme — clean, minimal, typographic, topic-agnostic.
+   Fonts: Rubik (text) + JetBrains Mono (code/dates).
+   To recolor the whole site, change --accent (and --accent-soft). */
+
+:root{
+  --ink:#20242a;          /* primary text */
+  --paper:#fcfcfb;        /* background */
+  --accent:#33507a;       /* restrained slate-blue accent */
+  --accent-soft:#33507a12; /* accent tint */
+  --subtle:#6b7280;       /* muted text */
+  --rule:#e7e5e1;         /* hairline borders */
+  --chip:#20242a0f;
+  --wrap:760px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+img{max-width:100%}
+
+body{
+  font-family:'Rubik',system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:16px;
+}
+
+/* thin accent bar across the very top */
+.accent-bar{height:4px;background:var(--accent)}
+
+/* single centered column */
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:24px;padding-right:24px}
+
+/* typography */
+h1{font-size:2.6rem;font-weight:600;letter-spacing:-.5px;line-height:1.2}
+h2{font-size:1.4rem;font-weight:600;margin-top:2.2rem;margin-bottom:1rem}
+h3{font-size:1.1rem;font-weight:600;margin-top:1.6rem;margin-bottom:.6rem}
+p,ul.prose,ol.prose{margin-bottom:1.4rem}
+strong{font-weight:600}
+em{font-style:italic}
+pre,code,samp,time{font-family:'JetBrains Mono',monospace}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.subtle{color:var(--subtle)}
+
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding-top:28px;padding-bottom:28px}
+nav .logo{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600;font-size:1.05rem}
+nav .logo:hover{text-decoration:none}
+nav .mark{
+  display:inline-grid;place-items:center;width:28px;height:28px;
+  background:var(--accent);color:#fff;border-radius:6px;
+  font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;
+}
+nav .links a{color:var(--ink);margin-left:20px}
+nav .links a:hover{color:var(--accent);text-decoration:none}
+
+/* header / intro */
+.intro{padding-top:36px;padding-bottom:36px;border-bottom:1px solid var(--rule);margin-bottom:40px}
+.profile{display:flex;align-items:center;gap:22px}
+.profile .avatar{
+  font-size:44px;line-height:1;width:96px;height:96px;
+  display:grid;place-items:center;background:var(--accent-soft);
+  border:1px solid var(--rule);border-radius:12px;flex-shrink:0;
+  color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:700;
+}
+.tagline{margin-top:.4rem;font-size:1.05rem}
+
+/* section heading with short accent underline */
+h2.section{position:relative;padding-bottom:.4rem;margin-bottom:1.2rem}
+h2.section::after{content:"";position:absolute;left:0;bottom:0;width:44px;height:3px;background:var(--accent);border-radius:2px}
+
+/* article list — date on the left in mono */
+ul.articles{list-style:none}
+ul.articles li{
+  display:grid;grid-template-columns:130px 1fr;gap:16px;
+  align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule);
+}
+ul.articles li:last-child{border-bottom:none}
+ul.articles time{color:var(--subtle);font-size:.9rem}
+ul.articles a{color:var(--ink);font-weight:500}
+ul.articles a:hover{color:var(--accent);text-decoration:none}
+
+/* post metadata + tags */
+.metadata{margin-top:14px;font-size:.9rem}
+a.tag{background:var(--chip);padding:1px 9px;border-radius:20px;color:var(--subtle);font-size:.82rem}
+a.tag:hover{text-decoration:none;color:var(--accent);background:var(--accent-soft)}
+
+/* contact links on home */
+.contact{display:flex;gap:18px;margin-top:1.6rem;padding-top:1.2rem;border-top:1px solid var(--rule)}
+
+/* prose */
+.prose{max-width:var(--wrap)}
+.prose pre{background:#20242a;color:#f2f0ec;padding:16px 20px;border-radius:8px;overflow:auto;margin-bottom:1.4rem;font-size:.95rem}
+.prose :not(pre) > code{background:var(--chip);padding:1px 6px;border-radius:4px;font-size:.95em}
+.prose blockquote{border-left:3px solid var(--accent);padding-left:16px;color:var(--subtle);margin-bottom:1.4rem}
+
+/* footer */
+footer{display:flex;justify-content:space-between;align-items:center;
+  margin-top:64px;padding-top:24px;padding-bottom:40px;border-top:1px solid var(--rule);font-size:.9rem}
+
+/* responsive */
+@media(max-width:640px){
+  h1{font-size:2rem}
+  .profile{flex-direction:column;text-align:center}
+  ul.articles li{grid-template-columns:1fr;gap:2px}
+  ul.articles time{font-size:.82rem}
+  footer{flex-direction:column;gap:8px;text-align:center}
+}

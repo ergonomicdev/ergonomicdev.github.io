@@ -1,0 +1,21 @@
+{{ define "header" }}
+<header class="wrap intro">
+  <div class="profile">
+    <div class="avatar">{{ .Site.Params.initials }}</div>
+    <div>
+      <h1>Hey, I'm {{ .Site.Params.author }}</h1>
+      <p class="subtle tagline">{{ .Site.Params.tagline }}</p>
+    </div>
+  </div>
+</header>
+{{ end }}
+{{ define "main" }}
+  <div class="copy prose">
+    <p>{{ .Site.Params.intro | markdownify }}</p>
+    <div class="contact">
+      {{ range .Site.Params.social }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}
+    </div>
+  </div>
+  <h2 class="section">Latest articles</h2>
+  {{ partial "article-list.html" (where .Site.RegularPages "Type" "posts") }}
+{{ end }}
