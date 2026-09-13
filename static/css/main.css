@@ -46,23 +46,12 @@ a:hover{text-decoration:underline}
 nav{display:flex;justify-content:space-between;align-items:center;padding-top:28px;padding-bottom:28px}
 nav .logo{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600;font-size:1.05rem}
 nav .logo:hover{text-decoration:none}
-nav .mark{
-  display:inline-grid;place-items:center;width:28px;height:28px;
-  background:var(--accent);color:#fff;border-radius:6px;
-  font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1rem;
-}
 nav .links a{color:var(--ink);margin-left:20px}
 nav .links a:hover{color:var(--accent);text-decoration:none}
 
 /* header / intro */
 .intro{padding-top:36px;padding-bottom:36px;border-bottom:1px solid var(--rule);margin-bottom:40px}
 .profile{display:flex;align-items:center;gap:22px}
-.profile .avatar{
-  font-size:44px;line-height:1;width:96px;height:96px;
-  display:grid;place-items:center;background:var(--accent-soft);
-  border:1px solid var(--rule);border-radius:12px;flex-shrink:0;
-  color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:700;
-}
 .tagline{margin-top:.4rem;font-size:1.05rem}
 
 /* section heading with short accent underline */

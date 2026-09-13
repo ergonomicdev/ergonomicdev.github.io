@@ -1,5 +1,5 @@
 <nav class="wrap">
-  <a class="logo" href="/"><span class="mark">{{ substr .Site.Params.author 0 1 | upper }}</span> {{ .Site.Title }}</a>
+  <a class="logo" href="/">{{ .Site.Title }}</a>
   <div class="links">
     {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
   </div>
