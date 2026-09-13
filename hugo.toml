@@ -6,8 +6,9 @@ title = "Tarek Nasser"
 
 [params]
   author = "Tarek Nasser"
+  avatar = "/img/tarek.jpg"
   tagline = "Consultant & problem solver — writing about what I build and learn."
-  intro = "I'm Tarek — a consultant and problem solver. For years my role has been the same regardless of the sector: get dropped into unfamiliar territory — custom applications, DevOps, infrastructure — and figure it out. This site is where I think out loud about what I'm building, what I'm learning, and the trade-offs I hit along the way. Expect a mix of hands-on engineering, tooling, and notes from the field."
+  intro = "I'm Tarek, a consultant and problem solver. For years my role has been the same regardless of the sector: get dropped into unfamiliar territory (custom applications, DevOps, infrastructure) and figure it out. This site is where I think out loud about what I'm building, what I'm learning, and the trade-offs I hit along the way. Expect a mix of hands-on engineering, tooling, and notes from the field."
   footerNote = "Writing about what I build and learn."
 
 [[params.social]]

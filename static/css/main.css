@@ -52,6 +52,10 @@ nav .links a:hover{color:var(--accent);text-decoration:none}
 /* header / intro */
 .intro{padding-top:36px;padding-bottom:36px;border-bottom:1px solid var(--rule);margin-bottom:40px}
 .profile{display:flex;align-items:center;gap:22px}
+.profile .avatar{
+  width:96px;height:96px;border-radius:50%;object-fit:cover;flex-shrink:0;
+  border:1px solid var(--rule);
+}
 .tagline{margin-top:.4rem;font-size:1.05rem}
 
 /* section heading with short accent underline */

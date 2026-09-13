@@ -1,6 +1,7 @@
 {{ define "header" }}
 <header class="wrap intro">
   <div class="profile">
+    <img class="avatar" src="{{ .Site.Params.avatar }}" alt="{{ .Site.Params.author }}" width="200" height="200">
     <div>
       <h1>Hey, I'm {{ .Site.Params.author }}</h1>
       <p class="subtle tagline">{{ .Site.Params.tagline }}</p>
