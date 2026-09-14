@@ -1,7 +1,10 @@
 {{ define "header" }}
 <header class="wrap intro">
   <div class="profile">
-    <img class="avatar" src="{{ .Site.Params.avatar }}" alt="{{ .Site.Params.author }}" width="200" height="200">
+    {{ with resources.Get "img/tarek.jpg" }}
+    {{ $img := . | resources.Fingerprint "md5" }}
+    <img class="avatar" src="{{ $img.RelPermalink }}" alt="{{ site.Params.author }}" width="120" height="120">
+    {{ end }}
     <div>
       <h1>Hey, I'm {{ .Site.Params.author }}</h1>
       <p class="subtle tagline">{{ .Site.Params.tagline }}</p>

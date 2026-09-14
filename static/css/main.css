@@ -51,10 +51,12 @@ nav .links a:hover{color:var(--accent);text-decoration:none}
 
 /* header / intro */
 .intro{padding-top:36px;padding-bottom:36px;border-bottom:1px solid var(--rule);margin-bottom:40px}
-.profile{display:flex;align-items:center;gap:22px}
+.profile{display:flex;align-items:center;gap:24px}
+.profile > div{display:flex;flex-direction:column;justify-content:center}
 .profile .avatar{
-  width:96px;height:96px;border-radius:50%;object-fit:cover;flex-shrink:0;
-  border:1px solid var(--rule);
+  width:120px;height:120px;border-radius:6px;object-fit:cover;flex-shrink:0;
+  background:#fff;padding:6px;border:1px solid var(--rule);
+  box-shadow:0 1px 3px rgba(0,0,0,.08);display:block;
 }
 .tagline{margin-top:.4rem;font-size:1.05rem}
 
