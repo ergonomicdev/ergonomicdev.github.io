@@ -34,8 +34,8 @@ Drafts (`draft: true`) are hidden in production. Posts with a future `date` are 
 Site identity, bio, and social links live in `hugo.toml` under `[params]`.
 
 Apps (home page and `/apps/`) are listed in `data/apps.yaml`, with icons in
-`assets/img/apps/`. Skills, experience, certifications, and education (home
-page and `/about/`) live in `data/resume.yaml`.
+`assets/img/apps/`. The skills summary on the home page lives in
+`data/resume.yaml`.
 Recolor the whole site by changing `--accent` in `static/css/main.css`.
 
 ## Deployment
