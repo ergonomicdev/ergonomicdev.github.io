@@ -1,0 +1,8 @@
+<div class="skills">
+  {{ range site.Data.resume.skills }}
+  <div class="skill-group">
+    <h3>{{ .group }}</h3>
+    <ul class="chips">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+  </div>
+  {{ end }}
+</div>

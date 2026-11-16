@@ -19,6 +19,14 @@
       {{ range .Site.Params.social }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}
     </div>
   </div>
+  <h2 class="section">Apps</h2>
+  {{ partial "app-list.html" . }}
+  <h2 class="section">Skills &amp; experience</h2>
+  <div class="copy prose">
+    <p>{{ site.Data.resume.summary }}</p>
+  </div>
+  {{ partial "skills.html" . }}
+  <p class="more"><a href="/about/">Full experience, certifications &amp; education →</a></p>
   <h2 class="section">Latest articles</h2>
   {{ partial "article-list.html" (where .Site.RegularPages "Type" "posts") }}
 {{ end }}

@@ -1,0 +1,7 @@
+{{ define "header" }}
+<header class="wrap intro"><h1>{{ .Title }}</h1></header>
+{{ end }}
+{{ define "main" }}
+  <div class="copy prose">{{ .Content }}</div>
+  {{ partial "app-list.html" . }}
+{{ end }}

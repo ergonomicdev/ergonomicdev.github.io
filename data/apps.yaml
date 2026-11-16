@@ -1,0 +1,18 @@
+# Apps shown on the home page and /apps/. Icons live in assets/img/apps/.
+- name: Espresso
+  icon: img/apps/espresso.png
+  tagline: Keep your Mac awake from the menu bar.
+  description: A tiny, native menu bar app in the spirit of Caffeine. Click the cup to stop your Mac from sleeping, or pick a timed session from 5 minutes to 5 hours. No Dock icon, no windows.
+  platform: macOS 13+
+  stack: Swift
+  repo: https://github.com/ergonomicdev/Espresso
+  brew: brew install --cask ergonomicdev/tap/espresso
+
+- name: AppSweeper
+  icon: img/apps/appsweeper.png
+  tagline: Uninstall apps completely, leftovers included.
+  description: A native SwiftUI app that removes an application together with its leftover files in ~/Library and /Library. You review a checklist with sizes, and everything goes to the Trash, never a permanent delete.
+  platform: macOS 13+
+  stack: Swift · SwiftUI
+  repo: https://github.com/ergonomicdev/AppSweeper
+  brew: brew install --cask ergonomicdev/tap/appsweeper

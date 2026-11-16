@@ -89,6 +89,42 @@ a.tag:hover{text-decoration:none;color:var(--accent);background:var(--accent-sof
 .prose :not(pre) > code{background:var(--chip);padding:1px 6px;border-radius:4px;font-size:.95em}
 .prose blockquote{border-left:3px solid var(--accent);padding-left:16px;color:var(--subtle);margin-bottom:1.4rem}
 
+/* apps */
+.apps{display:grid;gap:16px;margin-bottom:1.4rem}
+.app{display:flex;gap:18px;align-items:flex-start;padding:18px;border:1px solid var(--rule);border-radius:10px;background:#fff}
+.app-icon{width:64px;height:64px;flex-shrink:0}
+.app-body{min-width:0}
+.app h3{margin:0;font-size:1.15rem}
+.app h3 a{color:var(--ink)}
+.app h3 a:hover{color:var(--accent);text-decoration:none}
+.app-tagline{margin:.1rem 0 .5rem;font-weight:500}
+.app-desc{margin-bottom:.6rem;font-size:.95rem}
+.app-meta{font-size:.85rem}
+.app-install{margin:.7rem 0 0;background:var(--chip);padding:8px 12px;border-radius:6px;overflow:auto;font-size:.82rem}
+
+/* skills chips */
+.skill-group{margin-bottom:1rem}
+.skill-group h3{margin:0 0 .5rem;font-size:.95rem;color:var(--subtle);font-weight:500}
+ul.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+ul.chips li{background:var(--accent-soft);color:var(--accent);padding:3px 12px;border-radius:20px;font-size:.88rem}
+ul.chips.certs li{background:var(--chip);color:var(--ink)}
+p.more{margin-top:.4rem}
+
+/* experience timeline */
+ol.timeline{list-style:none;border-left:2px solid var(--rule);margin-left:4px}
+ol.timeline > li{position:relative;padding:0 0 1.6rem 22px}
+ol.timeline > li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+ol.timeline .company{font-weight:600;font-size:1.08rem}
+ol.timeline .company .subtle{font-weight:400}
+ol.timeline .role{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+ol.timeline .role time{color:var(--subtle);font-size:.85rem}
+ol.timeline p{margin:.4rem 0 0;font-size:.95rem}
+ol.timeline ul{margin:.4rem 0 0 1.1rem;font-size:.95rem}
+ol.timeline ul li{margin-bottom:.25rem}
+ul.plain{list-style:none}
+ul.plain li{padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.plain li:last-child{border-bottom:none}
+
 /* footer */
 footer{display:flex;justify-content:space-between;align-items:center;
   margin-top:64px;padding-top:24px;padding-bottom:40px;border-top:1px solid var(--rule);font-size:.9rem}
@@ -99,5 +135,6 @@ footer{display:flex;justify-content:space-between;align-items:center;
   .profile{flex-direction:column;text-align:center}
   ul.articles li{grid-template-columns:1fr;gap:2px}
   ul.articles time{font-size:.82rem}
+  .app{flex-direction:column;gap:12px}
   footer{flex-direction:column;gap:8px;text-align:center}
 }
