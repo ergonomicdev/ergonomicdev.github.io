@@ -26,7 +26,6 @@
     <p>{{ site.Data.resume.summary }}</p>
   </div>
   {{ partial "skills.html" . }}
-  <p class="more"><a href="/about/">Full experience, certifications &amp; education →</a></p>
   <h2 class="section">Latest articles</h2>
   {{ partial "article-list.html" (where .Site.RegularPages "Type" "posts") }}
 {{ end }}

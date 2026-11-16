@@ -3,30 +3,30 @@
 <ol class="timeline">
   {{ range $r.experience }}
   <li>
-    <div class="company">{{ .company }} <span class="subtle">· {{ .location }}</span></div>
+    <div class="company">
+      {{ .company }} <span class="subtle">· {{ .location }}</span>
+    </div>
     {{ range .roles }}
     <div class="role"><span>{{ .title }}</span><time>{{ .dates }}</time></div>
+    {{ end }} {{ with .summary }}
+    <p>{{ . }}</p>
+    {{ end }} {{ with .highlights }}
+    <ul>
+      {{ range . }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
     {{ end }}
-    {{ with .summary }}<p>{{ . }}</p>{{ end }}
-    {{ with .highlights }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
   </li>
   {{ end }}
 </ol>
 
-<h2 class="section">Skills</h2>
-{{ partial "skills.html" . }}
-
-<h2 class="section">Certifications</h2>
-<ul class="chips certs">{{ range $r.certifications }}<li>{{ . }}</li>{{ end }}</ul>
-
-{{ with $r.community }}
-<h2 class="section">Community</h2>
-<ul class="plain">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
-{{ end }}
-
 <h2 class="section">Education</h2>
 <ul class="plain">
   {{ range $r.education }}
-  <li><strong>{{ .school }}</strong>, {{ .degree }} <time class="subtle">({{ .dates }})</time></li>
+  <li>
+    <strong>{{ .school }}</strong>, {{ .degree }}
+    <time class="subtle">({{ .dates }})</time>
+  </li>
   {{ end }}
 </ul>

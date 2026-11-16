@@ -10,93 +10,26 @@ summary: >-
 
 skills:
   - group: Cloud & infrastructure
-    items: [Microsoft Azure, Infrastructure as Code, Terraform, Cloud migrations, Governance & cost management, Cloud security]
+    items:
+      [
+        Microsoft Azure,
+        Infrastructure as Code,
+        Terraform,
+        Cloud migrations,
+        Governance & cost management,
+        Cloud security,
+      ]
   - group: DevOps & developer platform
-    items: [DevOps, DevSecOps, GitHub Enterprise, GitHub Copilot, CI/CD, Azure DevOps / TFS]
+    items:
+      [DevSecOps, GitHub CLoud Enterprise (EMU), GitHub Copilot, Azure DevOps]
   - group: Leadership & delivery
-    items: [Delivery leadership, Team leadership, Cloud transformation, Solution architecture, Product ownership (CSPO), Client engagement]
+    items:
+      [
+        Delivery leadership,
+        Team leadership,
+        Cloud transformation,
+        Solution architecture,
+        Client engagement,
+      ]
   - group: Software development
-    items: [.NET, Swift & SwiftUI, Sitecore, SharePoint, Web applications, SQL databases]
-
-experience:
-  - company: Slalom
-    location: Toronto, ON
-    roles:
-      - title: Senior Delivery Principal, Cloud
-        dates: Jan 2023 – Present
-      - title: Principal, Technology Enablement
-        dates: Jul 2021 – Jan 2023
-    summary: Lead cloud engineering teams, driving project and solution outcomes with a hands-on approach. My focus is Infrastructure as Code and DevOps, guiding teams to deliver innovative, efficient, and secure cloud solutions.
-
-  - company: MNP
-    location: Toronto, ON
-    roles:
-      - title: Architect
-        dates: May 2020 – Jul 2021
-    summary: Cloud solutions architect helping clients get the most from Microsoft Azure by migrating workloads, building new applications, and assessing environments against best practices for cost, governance, security, and DevOps.
-
-  - company: T4G Limited
-    location: Greater Toronto Area
-    roles:
-      - title: Senior Solutions Consultant
-        dates: Mar 2018 – May 2020
-    summary: Azure solutions architecture, migrations, and environment assessments. Primary point of contact between project teams and clients on business, technical, and functional requirements.
-
-  - company: Dundee Corporation
-    location: Greater Toronto Area
-    roles:
-      - title: Manager, Application Development
-        dates: Jul 2015 – Mar 2017
-      - title: Senior Web/Sitecore Developer
-        dates: Nov 2012 – Jun 2015
-    highlights:
-      - Managed a team of database and web engineers.
-      - Re-architected web and database infrastructure after the sale of Dundee Goodman Private Wealth to Echelon Wealth Partners, then rebuilt Echelon's public website and advisor, investor, and user administration portals.
-      - Led the migration of 90+ advisors and assistants and 40,000 accounts for the Richardson GMP acquisition, with three months of preparation for a seamless two-day cutover.
-      - Ran TFS source control and deployments across environments, and application and database disaster recovery testing.
-
-  - company: Emesa Solutions Inc.
-    location: Greater Toronto Area
-    roles:
-      - title: Founder, Sitecore/SharePoint Consultant
-        dates: Jan 2012 – Nov 2012
-    summary: Founded a Sitecore certified partner offering Sitecore consulting, training, and Microsoft .NET development.
-
-  - company: T4G Limited
-    location: Halifax, NS & Toronto, ON
-    roles:
-      - title: Software Developer
-        dates: Oct 2009 – Dec 2011
-    summary: Built enterprise applications across Silverlight/SharePoint, WPF, Java, and Objective-C (iPad), and presented the Windows API Code Pack at Microsoft TechDays 2010.
-
-  - company: Nova Scotia Department of Education
-    location: Halifax, NS
-    roles:
-      - title: Programmer/Analyst
-        dates: May 2008 – Sep 2009
-      - title: Programmer/Analyst (Co-op, three terms)
-        dates: Sep 2005 – Oct 2006
-
-community:
-  - Sitecore Advisory Board Member (2011 – 2016): helped select user group topics, supported workshops, and presented on technical and business topics.
-  - Speaker, Microsoft TechDays 2010.
-
-certifications:
-  - Microsoft Certified: Azure Solutions Architect Expert
-  - Microsoft Certified: DevOps Engineer Expert
-  - HashiCorp Certified: Terraform Associate
-  - GitHub Copilot
-  - Microsoft Certified: Azure AI Fundamentals
-  - Microsoft Certified: Azure Administrator Associate
-  - "MCSE: Cloud Platform and Infrastructure"
-  - Certified Scrum Product Owner (CSPO)
-  - "MCTS: Microsoft SharePoint 2010, Application Development"
-  - Sitecore CMS 6 & 7 .NET Developer
-
-education:
-  - school: Saint Mary's University
-    degree: B.Sc., Double Major in Computer Science and Mathematics, Co-op
-    dates: 2003 – 2008
-  - school: University of Toronto
-    degree: Project Management
-    dates: "2015"
+    items: [Rust, Go, Python, SQL]
