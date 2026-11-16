@@ -1,0 +1,10 @@
+{{ define "header" }}
+<header class="wrap page-head">
+  <p class="eyebrow">open source · macOS</p>
+  <h1>{{ .Title }}</h1>
+</header>
+{{ end }}
+{{ define "main" }}
+  <div class="prose page-lede">{{ .Content }}</div>
+  {{ partial "app-list.html" . }}
+{{ end }}

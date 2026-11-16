@@ -1,0 +1,46 @@
+{{ define "header" }}
+<header class="wrap hero">
+  <div class="hero-text">
+    <p class="eyebrow"><span class="pulse"></span>{{ .Site.Params.eyebrow }}</p>
+    <h1>Hey, I'm <span class="grad">{{ .Site.Params.author }}</span></h1>
+    <p class="lede">{{ .Site.Params.tagline }}</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="/posts/">Read articles <span aria-hidden="true">→</span></a>
+      {{ range .Site.Params.social }}<a class="btn btn-ghost" href="{{ .url }}">{{ .name }}</a>{{ end }}
+    </div>
+  </div>
+  {{ with resources.Get "img/tarek.jpg" }}
+  {{ $img := (.Fill "480x480 Center q85") | resources.Fingerprint "md5" }}
+  <div class="portrait">
+    <div class="portrait-ring"></div>
+    <img src="{{ $img.RelPermalink }}" alt="{{ site.Params.author }}" width="240" height="240">
+  </div>
+  {{ end }}
+</header>
+{{ end }}
+{{ define "main" }}
+  <div class="terminal">
+    <div class="terminal-bar"><span></span><span></span><span></span><em>~/tarek — zsh</em></div>
+    <div class="terminal-body">
+      <p class="cmd"><span class="prompt">❯</span> cat about.md</p>
+      <p>{{ .Site.Params.intro | markdownify }}</p>
+      <p class="cmd"><span class="prompt">❯</span><span class="caret"></span></p>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="section-head"><span class="idx">01</span><h2>Apps</h2><a class="more" href="/apps/">All apps →</a></div>
+    {{ partial "app-list.html" . }}
+  </section>
+
+  <section class="block">
+    <div class="section-head"><span class="idx">02</span><h2>Skills &amp; experience</h2></div>
+    <p class="section-lede">{{ site.Data.resume.summary }}</p>
+    {{ partial "skills.html" . }}
+  </section>
+
+  <section class="block">
+    <div class="section-head"><span class="idx">03</span><h2>Latest articles</h2><a class="more" href="/posts/">All articles →</a></div>
+    {{ partial "article-list.html" (first 6 (where .Site.RegularPages "Type" "posts")) }}
+  </section>
+{{ end }}

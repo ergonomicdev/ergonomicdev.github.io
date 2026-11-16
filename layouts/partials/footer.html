@@ -1,0 +1,11 @@
+<footer class="wrap footer">
+  <div>
+    <div class="footer-name">{{ .Site.Params.author }}</div>
+    <div class="subtle">{{ .Site.Params.footerNote }}</div>
+  </div>
+  <div class="footer-links">
+    {{ range .Site.Params.social }}<a href="{{ .url }}">{{ .name }}</a>{{ end }}
+    <a href="/index.xml">RSS</a>
+    <span class="subtle mono">&copy; {{ now.Format "2006" }}</span>
+  </div>
+</footer>

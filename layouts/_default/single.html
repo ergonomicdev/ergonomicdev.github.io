@@ -1,0 +1,10 @@
+{{ define "header" }}
+<header class="wrap page-head post-head">
+  <p class="eyebrow"><time>{{ .Date.Format "January 2, 2006" }}</time> · {{ .ReadingTime }} min read</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.tags }}<div class="post-tags">{{ range . }}<a class="tag" href="/tags/{{ . | urlize }}">#{{ . }}</a>{{ end }}</div>{{ end }}
+</header>
+{{ end }}
+{{ define "main" }}
+  <article class="prose">{{ .Content }}</article>
+{{ end }}

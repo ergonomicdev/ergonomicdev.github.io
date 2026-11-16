@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Tarek Nasser">
+  <defs>
+    <linearGradient id="g" x1="-0.1022" y1="0.2808" x2="1.1022" y2="0.7192">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="150" fill="url(#g)"/>
+  <path fill="#0b0b12" d="M167.8 337.2V202.6H120.5V174.8H245.8V202.6H198.5V337.2ZM266.7 337.2V174.8H324.9L357.2 316.3H361.3V174.8H391.5V337.2H333.3L301 195.7H296.8V337.2Z"/>
+</svg>

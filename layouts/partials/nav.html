@@ -1,0 +1,9 @@
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="/"><span class="logo-mark">TN</span><span>{{ .Site.Title }}</span></a>
+    <div class="links">
+      {{ $current := .RelPermalink }}
+      {{ range .Site.Menus.main }}<a href="{{ .URL }}"{{ if hasPrefix $current .URL }} class="active"{{ end }}>{{ .Name }}</a>{{ end }}
+    </div>
+  </div>
+</nav>

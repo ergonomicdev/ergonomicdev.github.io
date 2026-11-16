@@ -1,0 +1,46 @@
+# Summary and skills (sourced from LinkedIn), rendered on the home page.
+
+summary: >-
+  Cloud Engineering Team Lead focused on Infrastructure as Code and DevOps. On
+  my latest project, I set up and configured GitHub Enterprise Cloud (EMU)
+  across an entire enterprise: onboarding development teams and their
+  applications from multiple GitHub Enterprise Server instances and Azure
+  DevOps, rolling out GitHub Actions integrated with security tooling and
+  ServiceNow DevOps Change Velocity, building a framework that lets teams
+  manage their repositories while meeting audit requirements, and running
+  workshops to get them productive on GitHub Cloud. I move between
+  hands-on engineering and leading technical and solution efforts as each
+  project needs.
+
+skills:
+  - group: GitHub Enterprise
+    items:
+      [
+        GitHub Enterprise Cloud (EMU),
+        Enterprise setup & configuration,
+        Repository management framework,
+        Audit & compliance,
+      ]
+  - group: Migrations & onboarding
+    items:
+      [
+        GitHub Enterprise Server to Cloud,
+        Azure DevOps to GitHub,
+        Team & application onboarding,
+      ]
+  - group: DevOps & IaC
+    items:
+      [
+        GitHub Actions,
+        Security tool integration,
+        ServiceNow DevOps Change Velocity,
+        Infrastructure as Code,
+      ]
+  - group: Leadership & enablement
+    items:
+      [
+        Team leadership,
+        Technical & solution leadership,
+        Hands-on engineering,
+        Workshops & enablement,
+      ]

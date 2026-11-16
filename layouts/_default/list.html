@@ -1,0 +1,10 @@
+{{ define "header" }}
+<header class="wrap page-head">
+  <p class="eyebrow">{{ with .Data.Singular }}{{ . }}{{ else }}writing{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+</header>
+{{ end }}
+{{ define "main" }}
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ partial "article-list.html" .Pages }}
+{{ end }}

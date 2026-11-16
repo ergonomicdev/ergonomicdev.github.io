@@ -1,0 +1,25 @@
+<div class="apps">
+  {{ range site.Data.apps }}
+  <article class="card app">
+    <div class="app-top">
+      {{ with resources.Get .icon }}
+      {{ $img := (.Resize "128x128 png") | resources.Fingerprint "md5" }}
+      <img class="app-icon" src="{{ $img.RelPermalink }}" alt="" width="64" height="64">
+      {{ end }}
+      <div>
+        <h3><a href="{{ .repo }}">{{ .name }}</a></h3>
+        <p class="app-tagline">{{ .tagline }}</p>
+      </div>
+    </div>
+    <p class="app-desc">{{ .description }}</p>
+    <ul class="tags"><li>{{ .platform }}</li><li>{{ .stack }}</li></ul>
+    {{ with .brew }}
+    <div class="install">
+      <code><span class="prompt">$</span> {{ . }}</code>
+      <button type="button" class="copy" data-copy="{{ . }}">Copy</button>
+    </div>
+    {{ end }}
+    <a class="app-link" href="{{ .repo }}">View source <span aria-hidden="true">↗</span></a>
+  </article>
+  {{ end }}
+</div>
